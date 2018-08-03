@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="head">Sign up</div>
+        <form method="post" action="/subscribe">
+            <input type="text" placeholder="username" name="name" required>
+            <input type="text" placeholder="email" name="email" required>
+            <input type="text" placeholder="usn" name="usn" required>
+            <input type="tel" placeholder="phone" name="phone" required>
+            <select name="branch">
+                <option value="branch">Branch <div class="uni"> &#9947; </div></option>
+                <option value="cse">CSE</option>
+                <option value="ise">ISE</option>
+                <option value="ece">ECE</option>
+                <option value="mech">MECH</option>
+                <option value="civil">CIVIL</option>
+            </select>
+            <div class="inp">
+                <input type="radio" name="gender" value="male" checked> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other  
+            </div>     
+            <input type="submit" name="submit" value="submit" placeholder=" submit">
+        </form>
+    </div>
+</body>
+</html>

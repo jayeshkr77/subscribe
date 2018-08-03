@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding-top: 2px;
+    background: #43c6ac; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #43c6ac, #191654); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #43c6ac, #191654); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat:no-repeat;
+    background-size: cover;
+    /*background: #eceff1; /*fallback for old browsers*/
+}
+@media only screen and (min-width: 768px) {
+    body{
+        padding-top: 40px;
+    }
+}
+.container{
+    width:98%;
+    margin:0 auto;
+    border:1px solid #009688;
+    border-radius:8px;
+    padding-bottom:20px;
+    background:rgba(255,255,255,0.7);
+    /*background: #e0f7fa;  /* fallback for old browsers */ 
+}
+
+@media only screen and (min-width: 768px) {
+    .container{
+        max-width: 400px;
+        margin:5% auto;
+        padding: 0;
+        border-radius:8px;
+        padding-bottom:20px;
+        background:rgba(255,255,255,0.6);
+        /*background: #e0f7fa;  /* fallback for old browsers */ 
+    }
+}
+
+
+.head{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding:20px;
+    text-align: center;
+    font-size: 25px;
+    color:#757882;
+}
+
+input[type=text]{
+    margin:10px;
+    margin-left:10%;
+    border:none;
+    width:70%;
+    padding:10px;
+    border-bottom:1px solid #546e7a;
+    background: transparent;
+    
+}
+input[type=tel]{
+    margin:10px;
+    margin-left:10%;
+    border:none;
+    width:70%;
+    border-bottom:1px solid #546e7a;
+    padding:10px;
+    background: transparent;
+}
+select{
+    margin:10px;
+    margin-left:10%;
+    border:none;
+    width:80px;
+    border-bottom:1px solid #546e7a;
+    padding:10px;
+    color:#455a64;
+    -webkit-appearance: none; 
+   -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    /* background: url(http://www.stackoverflow.com/favicon.ico) 96% / 20% no-repeat #eee; */
+}
+.uni{
+    position:absolute;
+    margin-left:50px;
+}
+.inp{
+    position: relative;
+    color:#455a64;
+    top:10px;
+    left:10%;
+    width:80%;
+    background: transparent;
+}
+input[type=radio]:after{
+    background:transparent;
+}
+
+@media only screen and (min-width: 768px) {
+    .inp{
+        position: relative;
+        color:#455a64;
+        top:-35px;
+        left:35%;
+    }
+}
+
+input[type=submit]{
+    margin-top:25px;
+    margin-left:23%;
+    border:none;
+    width:50%;
+    color:#263238;
+    background: #ff6347;
+    padding:15px;
+    border-radius: 5px;
+}
+@media only screen and (min-width: 768px) {
+    input[type=submit]{
+        margin:10px;
+        margin-left:10%;
+        border:none;
+        width:30%;
+        color:#263238;
+        background: #ff6347;
+        padding:15px;
+        border-radius: 5px;
+    }
+}

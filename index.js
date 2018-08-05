@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 let db = require('./db');
 
 const app = express();
-// mongodb://jayeshkr7:kdps10119@ds111422.mlab.com:11422/subscribers
+// mongodb://*******:*******@ds111422.mlab.com:11422/subscribers
 mongoose.connect('mongodb://teqsk1514:iamravi14@ds211592.mlab.com:11592/userdata',{ useNewUrlParser: true });
 
 const port = process.env.PORT || 4000;

@@ -1,0 +1,102 @@
+body{
+    margin:0px;
+    padding:0px;
+    background: #43c6ac; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #43c6ac, #191654); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #43c6ac, #191654); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat:no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+}
+a{
+    text-decoration:none;
+    color: '#fff'
+}
+a:visited{
+    color:white;
+}
+.container{
+    min-height:100vh;
+    width:100%;
+}
+nav{
+    margin:0px;
+    padding:0px;
+}
+nav ul{
+    list-style:none;
+    color:white;
+    margin:0px;
+    padding:10px;
+    padding-left:15px;
+}
+.home{
+    font-size:30px;
+}
+nav .logo{
+    font-size: 16px;
+}
+.right{
+    float:right;
+    margin-top:-25px;
+}
+.content{
+    
+        width: 50%;
+        max-width: 250px;
+        margin:0 auto;
+        margin-top:50px;
+
+
+}
+@media screen and (max-width:400px){
+    .content{ width:60%;}
+}
+
+.green{
+    color:#52d3aa;
+}
+.msg{
+    margin-top:50px;
+    text-align: center;
+    color:white;
+    font-size:30px;
+}
+.not{
+    margin-top:20px;
+    text-align:center;
+    color:white;
+    font-size:18px;
+}
+
+
+
+t{
+    color:#f5ffcb;
+    font-size:23px;
+}
+
+/* for success page */
+.circ{
+    opacity: 0;
+    stroke-dasharray: 130;
+    stroke-dashoffset: 130;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+.tick{
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    -webkit-transition: stroke-dashoffset 1s 0.5s ease-out;
+    -moz-transition: stroke-dashoffset 1s 0.5s ease-out;
+    -ms-transition: stroke-dashoffset 1s 0.5s ease-out;
+    -o-transition: stroke-dashoffset 1s 0.5s ease-out;
+    transition: stroke-dashoffset 1s 0.5s ease-out;
+}
+.drawn + svg .path{
+    opacity: 1;
+    stroke-dashoffset: 0;
+}

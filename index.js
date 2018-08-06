@@ -1,17 +1,22 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const exphbs = require('express-handlebars');
 let db = require('./db');
 
 const app = express();
-// mongodb://*******:*******@ds111422.mlab.com:11422/subscribers
-mongoose.connect('mongodb://teqsk1514:iamravi14@ds211592.mlab.com:11592/userdata',{ useNewUrlParser: true });
+// 
+mongoose.connect('mongodb://jayeshkr7:kdps10119@ds111422.mlab.com:11422/subscribers',{ useNewUrlParser: true });
 
 const port = process.env.PORT || 4000;
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 app.use(express.static('public'));
+
+app.set('views',__dirname+'/views');
+app.engine('handlebars', exphbs());
+app.set('view engine', 'handlebars');
 
 app.get('/',(req,res)=>{
     res.sendFile(__dirname+'/index.html');
@@ -23,11 +28,11 @@ app.post('/subscribe',(req,res)=>{
         if(err)
             res.send(err);
         else
-            res.send("success");
+            res.render('success',{name:req.body.name,email:req.body.email});
       });
     // console.log(req.headers);    
 });
 
-app.listen(port,'127.0.0.1',()=>{
+app.listen(port,()=>{
     console.log(`server is live at port: ${port}`);
 })

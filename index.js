@@ -6,7 +6,7 @@ let db = require('./db');
 
 const app = express();
 // 
-mongoose.connect('mongodb://jayeshkr7:kdps10119@ds111422.mlab.com:11422/subscribers',{ useNewUrlParser: true });
+mongoose.connect('mongodb://*********:********@ds111422.mlab.com:11422/subscribers',{ useNewUrlParser: true });
 
 const port = process.env.PORT || 4000;
 
